@@ -1,0 +1,3 @@
+# @package train.kd
+_target_: kd.KDMSELoss
+alpha: 0.5

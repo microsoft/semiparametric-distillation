@@ -1,0 +1,10 @@
+# @package _global_
+defaults:
+  - dataset: magic
+n_trees: [1, 2, 3, 5, 10, 15, 20, 30, 40]
+n_repeats: 5
+n_splits: 10
+split_mode: crossfit
+calibrate_teacher: False
+scale: p
+seed: 2357

@@ -1,0 +1,5 @@
+# @package train.kd
+_target_: kd.KDMSEOrthoLoss
+alpha: 0.5
+eps: 1e-2
+smoothing: 0.0

@@ -1,0 +1,6 @@
+# @package _global_
+dataset:
+  _target_: datamodules.Higgs
+  seed: ${seed}
+metric:
+  _target_: metrics.Accuracy

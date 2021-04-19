@@ -1,0 +1,9 @@
+pytorch>=1.7
+pytorch-lightning>=1.2.0
+pytorch-lightning-bolts>=0.3.0
+hydra-core>=1.0.6
+scikit-learn>=0.23.1
+# Only necessary for distributed training:
+# ray[tune]>=1.1.0
+# munch
+# wandb==0.9.7  # wandb>=0.10.0 will try to read from ~/.config, causing permission error

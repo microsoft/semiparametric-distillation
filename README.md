@@ -1,14 +1,48 @@
-# Project
+# Knowledge Distillation as Semiparametric Inference
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+Code replicating the experiments of
 
-As the maintainer of this project, please make a few updates:
+[Knowledge Distillation as Semiparametric Inference](https://openreview.net/pdf?id=m4UCf24r0Y)
+Tri Dao, Govinda M. Kamath, Vasilis Syrgkanis, and Lester Mackey.
+International Conference on Learning Representations (ICLR). May 2021.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+## Required packages
+Python >= 3.7, Pytorch >= 1.7.
+More details in `requirements.txt`. 
+
+We use
+[Pytorch-lightning](https://github.com/PyTorchLightning/pytorch-lightning) to
+organize training code, [Hydra](https://hydra.cc/) to organize configurations.
+
+[Optional] We use [Ray](https://github.com/ray-project/ray) for distributed
+training.
+
+[Optional] We use [Wandb](https://wandb.ai/) for logging.
+
+## Code structure
+```
+├─ cfg               # Configuration files, for Hydra
+├─ datamodules        # Code for datasets
+├─ models            # Model implementations
+├─ results           # json files containing raw results, and pdf files containing plots
+├─ scripts           # Scripts to tune hyperparameters
+├─ distill_train.py  # Train student model, distilled from teacher model
+├─ kd.py            # Implementation of knowledge distillation losses
+├─ ray_runner.py      # Distributed training with Ray [optional]
+├─ train.py          # Train a model (e.g. teacher or student) from scratch
+├─ utils.py          # Utility functions
+```
+
+## Training
+To train a ResNet18 on CIFAR10, and save model to disk:
+```
+python train.py train.batch_size=512 train.optimizer.lr=4e-1 model=resnet18 +save_checkpoint_path=checkpoints/resnet18/final.ckpt runner=pl
+```
+
+To train a CNN5 student:
+```
+python distill_train.py train.batch_size=512 train.optimizer.lr=4e-1 train.kd.class=KDOrthoLoss train.gradient_clip_val=0.1 train.kd.temperature=2.0 runner=pl
+```
 
 ## Contributing
 

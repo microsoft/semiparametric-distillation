@@ -1,0 +1,6 @@
+# @package _global_
+dataset:
+  _target_: datamodules.StumbleUpon
+  data_dir: ${env:DATA_DIR,/dfs/scratch0/trid/data}/stumbleupon
+metric:
+  _target_: metrics.Accuracy

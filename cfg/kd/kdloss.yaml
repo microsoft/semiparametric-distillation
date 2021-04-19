@@ -1,0 +1,4 @@
+# @package train.kd
+_target_: kd.KDLoss
+temperature: 4.0
+alpha: 0.5
