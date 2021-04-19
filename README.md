@@ -2,8 +2,8 @@
 
 Code replicating the experiments of
 
-[Knowledge Distillation as Semiparametric Inference](https://openreview.net/pdf?id=m4UCf24r0Y)
-Tri Dao, Govinda M. Kamath, Vasilis Syrgkanis, and Lester Mackey.
+[Knowledge Distillation as Semiparametric Inference](https://openreview.net/pdf?id=m4UCf24r0Y).  
+Tri Dao, Govinda M. Kamath, Vasilis Syrgkanis, and Lester Mackey.  
 International Conference on Learning Representations (ICLR). May 2021.
 
 ## Required packages
