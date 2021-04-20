@@ -1,10 +1,21 @@
 # Knowledge Distillation as Semiparametric Inference
 
-Code replicating the experiments of
+This code replicates the experiments of
 
 [Knowledge Distillation as Semiparametric Inference](https://openreview.net/pdf?id=m4UCf24r0Y).  
 Tri Dao, Govinda M. Kamath, Vasilis Syrgkanis, and Lester Mackey.  
 International Conference on Learning Representations (ICLR). May 2021.
+
+```
+@inproceedings{
+  dao2021knowledge,
+  title={Knowledge Distillation as Semiparametric Inference},
+  author={Tri Dao and Govinda M Kamath and Vasilis Syrgkanis and Lester Mackey},
+  booktitle={International Conference on Learning Representations},
+  year={2021},
+  url={https://openreview.net/forum?id=m4UCf24r0Y}
+}
+```
 
 ## Required packages
 Python >= 3.7, Pytorch >= 1.7.
