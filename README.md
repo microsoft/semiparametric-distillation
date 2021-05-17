@@ -2,7 +2,7 @@
 
 This code replicates the experiments of
 
-[Knowledge Distillation as Semiparametric Inference](https://openreview.net/pdf?id=m4UCf24r0Y).  
+[Knowledge Distillation as Semiparametric Inference](https://arxiv.org/abs/2104.09732).  
 Tri Dao, Govinda M. Kamath, Vasilis Syrgkanis, and Lester Mackey.  
 International Conference on Learning Representations (ICLR). May 2021.
 
